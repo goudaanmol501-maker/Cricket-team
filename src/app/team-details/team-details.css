@@ -1,0 +1,41 @@
+.detail-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+.back-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: gold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+h1 { font-size: 2rem; margin-bottom: 2rem; }
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.player-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.jersey {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+  min-width: 40px;
+}
+.role {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 2px;
+}

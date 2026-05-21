@@ -1,0 +1,48 @@
+.match-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+.match-header { text-align: center; margin-bottom: 3rem; }
+.match-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.match-info { font-size: 1.1rem; opacity: 0.8; letter-spacing: 1px; }
+.vs-row {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+}
+.team-card {
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, background 0.3s;
+  min-width: 200px;
+}
+.team-card:hover { transform: translateY(-8px); background: rgba(255,255,255,0.18); }
+.team-card.team-b { border-color: rgba(255,100,100,0.4); }
+.team-icon { font-size: 3rem; margin-bottom: 1rem; }
+.team-card h2 { font-size: 1.8rem; margin: 0 0 1rem; }
+.view-squad { font-size: 0.9rem; opacity: 0.7; }
+.vs-badge {
+  font-size: 2rem;
+  font-weight: 900;
+  background: gold;
+  color: #333;
+  border-radius: 50%;
+  width: 60px; height: 60px;
+  display: flex; align-items: center; justify-content: center;
+  position: absolute;
+  left: 50%; transform: translateX(-50%);
+}

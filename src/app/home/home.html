@@ -1,0 +1,19 @@
+<div class="match-container">
+  <div class="match-header">
+    <h1>🏏 Cricket Match</h1>
+    <p class="match-info">📅 {{ matchDay }} &nbsp;|&nbsp; ⏰ {{ matchTime }}</p>
+  </div>
+
+  <div class="vs-row">
+    <a *ngFor="let team of teams; let i = index"
+       [routerLink]="['/team', team.id]"
+       class="team-card"
+       [class.team-b]="i === 1">
+      <div class="team-icon">{{ i === 0 ? '🔵' : '🔴' }}</div>
+      <h2>{{ team.name }}</h2>
+      <span class="view-squad">View Squad →</span>
+    </a>
+
+    <div class="vs-badge">VS</div>
+  </div>
+</div>

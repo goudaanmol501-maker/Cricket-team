@@ -1,0 +1,13 @@
+<div class="detail-container">
+  <a routerLink="/" class="back-btn">← Back to Match</a>
+  <h1>{{ teamName }} — Squad</h1>
+  <div class="player-grid">
+    <div class="player-card" *ngFor="let player of players; let i = index">
+      <span class="jersey">#{{ i + 1 }}</span>
+      <div>
+        <strong>{{ player.name }}</strong>
+        <span class="role">{{ player.role }}</span>
+      </div>
+    </div>
+  </div>
+</div>
