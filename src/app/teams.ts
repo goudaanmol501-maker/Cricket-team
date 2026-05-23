@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class TeamsService {
   private teams = [
-    { id: 'team-a', name: 'Team A', players: ['Anmol', 'Ganesh', 'Sudeep'] },
-    { id: 'team-b', name: 'Team B', players: ['Rohan', 'Roshan', 'Rovan'] },
+    { id: 'team-a', name: 'Sailab ke Sikandar', players: ['Sailab', 'Krithik', 'Shreya',"Bhavya"] } ,
+    { id: 'team-b', name:  'Luckys Ke Bandar', players: ['Anmol', 'Lakshmana', 'Tanmita','Janvi']},
   ];
 
   getTeams(): any[] {
