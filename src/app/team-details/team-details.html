@@ -5,8 +5,8 @@
     <div class="player-card" *ngFor="let player of players; let i = index">
       <span class="jersey">#{{ i + 1 }}</span>
       <div>
-        <strong>{{ player.name }}</strong>
-        <span class="role">{{ player.role }}</span>
+        <strong>{{ player.name ?? player }}</strong>
+        <span class="role">{{ player.role ?? '' }}</span>
       </div>
     </div>
   </div>
